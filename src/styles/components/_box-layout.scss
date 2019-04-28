@@ -1,0 +1,34 @@
+.box-layout {
+    
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    &__video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        
+        opacity: .40;
+        object-fit: cover;
+        
+    }
+    &__box {
+        position: relative;
+        background: fade-out( white, .15);
+        border-radius: 3px;
+        text-align: center;
+        width: 25rem;
+        padding: $l-size $m-size;
+    }
+
+    &__title {
+        margin: 0 0 $m-size 0;
+        line-height: 1;
+    }
+}
