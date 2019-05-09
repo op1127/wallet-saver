@@ -3,32 +3,53 @@
     height: 100vh;
     width: 100vw;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    &__video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100vw;
-        
-        opacity: .40;
-        object-fit: cover;
-        
-    }
+ 
+    background-image: url('/media/box-bg.jpg');
+    background-size: cover;
+    
     &__box {
         position: relative;
-        background: fade-out( white, .15);
-        border-radius: 3px;
-        text-align: center;
-        width: 25rem;
-        padding: $l-size $m-size;
+      
+        
+        width: 50%;
+        height: 100%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__content {
+        width: min-content;
+        height: 55%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
     }
 
     &__title {
         margin: 0 0 $m-size 0;
         line-height: 1;
     }
+}
+
+.sub-heading {
+    font-size: 2.6rem;
+}
+
+.box-text {
+    font-weight: 600;
+    font-size: $font-size-large;
+    color: $dark-grey;
+}
+
+.logo {
+    height: 8rem;
+    
+}
+
+.btn-box {
+    margin-top: 3rem;
 }

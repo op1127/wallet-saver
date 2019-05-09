@@ -4,16 +4,21 @@ import { startLogin } from '../actions/auth';
 
 export const LoginPage = ({ startLogin }) => (
     <div className='box-layout'>
-    <video className='box-layout__video' autoPlay muted loop>
-        <source src='/media/Home_work.mp4' type='video/mp4'></source>
-        <source src='/media/Home_work.webm' type='video/webm'></source>
-    </video>
+    
         <div className="box-layout__box">
-            <h1 className="box-layout__title">Expense Tracker</h1>
-            <p>Expense tracking made easy</p>
-            <button className='button' onClick={startLogin}>Login with Google</button>
+            <div className="box-layout__content">
+                <img className="logo" src="/media/wallet-savior.svg" alt="Logo" />
+                <h3 className="sub-heading"><em>Expense tracking made easy</em></h3>
+                <p className="box-text">We help you effortlessly track where your money goes so you can focus on earning more of it.</p>
+                <ul className="box-text">
+                    <li>Add and edit expenses</li>
+                    <li>Categorize expenses by description</li>
+                    <li>Easily search for past expenses</li>
+                </ul>
+                <button className="button btn-box" onClick={startLogin}>Login with Google</button>
+                <p>Created by Omar Plasencia</p>
+            </div>
         </div>
-        
     </div>
 );
 
