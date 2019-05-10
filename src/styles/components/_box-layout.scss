@@ -6,6 +6,7 @@
  
     background-image: url('/media/box-bg.jpg');
     background-size: cover;
+
     
     &__box {
         position: relative;
@@ -17,16 +18,33 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media only screen and (max-width: 75em) {
+            margin: 0 auto;
+        }
+        @media only screen and (max-width: 37.5em) {
+            
+            width: 100vw;
+            
+        }
+        
     }
 
     &__content {
         width: min-content;
-        height: 55%;
+        height: auto;
 
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
+
+        @media only screen and (max-width: 37.5em) {
+            height: auto;
+            width: 100vw;
+            justify-content: space-around;
+            padding: 2rem;
+        }
     }
 
     &__title {
@@ -47,7 +65,10 @@
 
 .logo {
     height: 8rem;
-    
+    @media only screen and (max-width: 37.5em) {
+        height: 5rem;
+        
+    }
 }
 
 .btn-box {
