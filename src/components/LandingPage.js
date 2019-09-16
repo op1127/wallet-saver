@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { startLogin } from '../actions/auth';
 
-export const LoginPage = ({ startLogin }) => (
+export const LandingPage = ({ startLogin }) => (
     <div className='box-layout'>
     
         <div className="box-layout__box">
@@ -26,4 +26,4 @@ const mapDispatchToProps = dispatch => ({
     startLogin: () => dispatch(startLogin())
 });
 
-export default connect(undefined, mapDispatchToProps)(LoginPage);
+export default connect(undefined, mapDispatchToProps)(LandingPage);
