@@ -17,7 +17,7 @@
         user-select: none;
 
         @include respond(phone) {
-            grid-column: 2 / 4;
+            grid-column: 1 / 4;
         }
     }
 
@@ -28,7 +28,7 @@
         justify-self: end;
 
         @include respond(phone) {
-            grid-column: 9 / 12;
+            grid-column: 9 / 13;
         }
     }
 

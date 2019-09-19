@@ -24,11 +24,12 @@
         }
 
 		@include respond(phone) {
-			grid-column: 2 / 12;
+			grid-column: 1 / 13;
 			grid-row: 1 / 2;
             justify-self: center;
-            margin-bottom: 8rem;
-            width: 58.7rem;
+            margin-bottom: 4rem;
+			width: 100%;
+			height: auto;
 		}
 	}
 
@@ -37,9 +38,12 @@
 		font-weight: 400;
 		margin-bottom: 0;
 
+		@include respond(tab-port) {
+			font-size: 3rem;
+		}
+
 		@include respond(phone) {
-	
-			font-size: 3.4rem;
+			font-size: 2.7rem;
 			text-align: center;
 		}
 	}
@@ -59,6 +63,7 @@
 		width: 50rem;
 		height: auto;
 		user-select: none;
+		align-self: center;
 
 		@include respond(tab-land) {
 			width: 40rem;
@@ -73,7 +78,7 @@
 			grid-column: 1 / 13;
 			grid-row: 2 /3;
             justify-self: center;
-            margin-top: 5rem;
+       
             width: 40rem;
 		}
 	}
