@@ -1,6 +1,8 @@
+@import './base/mixins';
 @import './base/settings';
 @import './base/base';
-@import './components/landing-page';
+
+// Dashboard
 @import './components/button';
 @import './components/header';
 @import './components/page-header';
@@ -11,3 +13,12 @@
 @import './components/visibility';
 @import './components/list';
 @import './components/loader';
+@import './components/landing-page';
+
+//Landing Page
+@import './landing-page/_button.scss';
+@import './landing-page/_description.scss';
+@import './landing-page/_features.scss';
+@import './landing-page/_footer.scss';
+@import './landing-page/_hero.scss';
+@import './landing-page/_nav.scss';

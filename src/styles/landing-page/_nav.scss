@@ -1,0 +1,34 @@
+.nav {
+   
+    background-color: #fff;
+    &__content {
+        @include grid(1fr);
+        background-color: #fff;
+        height: 8rem;
+    }
+
+    &__logo {
+        height: 2.3rem;
+        width: 23.7rem;
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+        align-self: center;
+        user-select: none;
+
+        @include respond(phone) {
+            grid-column: 2 / 4;
+        }
+    }
+
+    &__btn {
+        grid-column: 10 / 13;
+        grid-row: 1 / 2;
+        align-self: center;
+        justify-self: end;
+
+        @include respond(phone) {
+            grid-column: 9 / 12;
+        }
+    }
+
+}

@@ -1,71 +1,60 @@
 .list-header {
-    background-color: $off-white;
-    border: 1px solid darken($off-white, 7);
-    color: $grey;
-
-    display: flex;
-    justify-content: space-between;
-    padding: $s-size $m-size;
+	background-color: $off-white;
+	border: 1px solid darken($off-white, 7);
+	display: flex;
+	justify-content: space-between;
+	padding: 1.2rem 1.6rem;
 }
 
 .list-body {
-    margin-bottom: $m-size;
-
-    @media (min-width: $desktop-breakpoint) {
-        margin-bottom: $l-size;
-    }
+	margin-bottom: 1.6rem;
 }
 
 .list-item {
-    border: 1px solid darken($off-white, 7);
-    border-top: none;
-    color: $dark-grey;
-    text-decoration: none;
+	border: 1px solid darken($off-white, 7);
+	border-top: none;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1.6rem;
+	transition: background-color 0.3s ease;
 
-    padding: $s-size;
-    display: flex;
-    flex-direction: column;
-    transition: background-color .3s ease;
+	&:hover {
+		background-color: $off-white;
+	}
 
-    &:hover {
-        background-color: $off-white;
-    }
+	&__title {
+		color: $grey;
+		margin: 0;
+		word-break: break-all;
+	}
 
-    &__title {
-        margin: 0;
-        word-break: break-all;
-    }
+	&__sub-title {
+		color: $grey;
+		font-size: 1.4rem;
+	}
 
-    &__sub-title {
-        color: $grey;
-        font-size: $font-size-small;
-    }
+	&__data {
+		color: $grey;
+		margin: 1.2rem 0 0 0;
+	}
 
-    &__data {
-        margin: $s-size 0 0 0;
+	&--message {
+		color: $grey;
+		padding: 1.6rem;
+		align-items: center;
+		justify-content: center;
 
-        @media (min-width: $desktop-breakpoint) {
-            margin: 0;
-            padding-left: $s-size;
-        }
-    }
+		&:hover {
+			background: none;
+		}
+	}
 
-    &--message {
-        color: $grey;
-        padding: $m-size;
-
-        align-items: center;
-        justify-content: center;
-
-        &:hover {
-            background: none;
-        }
-    }
-
-    @media (min-width: $desktop-breakpoint) {
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: $m-size;
-    }
+	@include respond(phone) {
+		padding: 1.2rem;
+		flex-direction: column;
+		align-items: flex-start;
+	}
 }

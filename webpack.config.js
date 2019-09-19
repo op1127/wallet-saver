@@ -1,40 +1,36 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
-// const CopyPlugin = require('copy-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const postcssPresetEnv = require('postcss-preset-env');
 const cssNano = require('cssnano');
 
 module.exports = {
     entry: ['@babel/polyfill', './src/app.js'],
     output: {
-        path: path.resolve(__dirname, 'public', 'dist'),
-        filename: 'bundle.js'
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'main.js'
     },
     devServer: {
-        contentBase: './public',
-        historyApiFallback: true,
-        publicPath: '/dist/'
+        contentBase: './dist'
     },
     plugins: [
-        
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: './public/index.html',
-        }), 
+            template: './src/index.html',
+        }),
         new MiniCSSExtractPlugin({
             filename: '[name].css'
         }),
-        /*
         new CopyPlugin([{
                 from: 'src/img',
                 to: 'img'
             },
-            {
+            /*{
                 from: 'src/img/favicon',
                 to: 'favicon'
-            },
-        ]), */
+            }, */
+        ]), 
     ],
     module: {
         rules: [{

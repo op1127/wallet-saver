@@ -1,20 +1,22 @@
 .input-group {
-    margin-bottom: $l-size;
+    margin-bottom: 3.2rem;
 
     display: flex;
-    flex-direction: column;
-    margin-bottom: $m-size;
+    margin-bottom: 1.6rem;
 
-    @media (min-width: $desktop-breakpoint) {
-        flex-direction: row;
-        margin-bottom: $l-size;
+
+    @include respond(phone) {
+        flex-direction: column;
+        margin-bottom: 3.2rem;
     }
 
-    &__item {
-        margin-bottom: $s-size;
+    
 
-        @media (min-width: $desktop-breakpoint) {
-            margin: 0 $s-size 0 0;
+    &__item {
+        margin: 0 1.6rem 0 0;
+
+        @include respond(tab-land) {
+            margin-bottom: 1.2rem;
         }
     }
 }

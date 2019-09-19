@@ -1,0 +1,56 @@
+.btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.4rem;
+    text-align: center;
+
+    background-color: $orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 18rem;
+    border-radius: .4rem;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 3px solid darken($orange, 15%);
+    transition: all .1s;
+
+    &__outline {
+        color: $orange;
+        font-size: 1.3rem;
+        border: .3rem solid $orange ;
+        background-color: #fff;
+        height: 4rem;
+        width: 14rem;
+
+        &:hover {
+            border: .3rem solid $orange !important;
+        }
+    }
+
+    &__small {
+        font-size: 1.3rem;
+        height: 4rem;
+        width: 14rem;
+    }
+
+    &__grey {
+        background-color: lighten($grey, 20%);
+        border-bottom: 3px solid $grey;
+
+        &:hover {
+            border-bottom: 1px solid $grey !important;
+        }
+    }
+
+
+    &:hover {
+        transform: translateY(2px);
+        border-bottom: 1px solid darken($orange, 15%);
+    }
+}
+

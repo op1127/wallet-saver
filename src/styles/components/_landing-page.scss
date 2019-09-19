@@ -4,7 +4,7 @@
     width: 100vw;
 
  
-    background-image: url('/media/box-bg.jpg');
+    background-image: url('/img/box-bg.jpg');
     background-size: cover;
 
     
@@ -48,7 +48,7 @@
     }
 
     &__title {
-        margin: 0 0 $m-size 0;
+        margin: 0 0 1.6rem 0;
         line-height: 1;
     }
 }
@@ -59,8 +59,8 @@
 
 .box-text {
     font-weight: 600;
-    font-size: $font-size-large;
-    color: $dark-grey;
+    font-size: 1.8rem;
+    color: $grey;
 }
 
 .logo {

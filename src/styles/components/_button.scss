@@ -5,12 +5,12 @@
     line-height: 1;
     display: inline-block;
     font-weight: 300;
-    font-size: $font-size-large;
+    font-size: 1.8rem;
     border: none;
-    padding: $s-size $m-size;
-    border-radius: 3px;
+    padding: 1.2rem 1.6rem;
+    border-radius: .3rem;
     transition: all .3s ease;
-
+    
     &:hover {
         background-color: lighten($dark-blue, 10)
     }

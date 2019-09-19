@@ -3,11 +3,11 @@
     flex-direction: column;
 
     &__error {
-        margin: 0 0 $m-size 0;
+        margin: 0 0 1.6rem 0;
         font-style: italic;
     }
 
     > * {
-        margin-bottom: $m-size;
+        margin-bottom: 1.6rem;
     }
 }

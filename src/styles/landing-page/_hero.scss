@@ -1,0 +1,109 @@
+.hero {
+	
+	background-image: url(../img/hero-bg-1.svg);
+	background-size: cover;
+	background-position: top;
+	position: relative;
+	z-index: 10;
+	height: 72rem;
+
+	&__content {
+		@include grid(1fr);
+		height: 100%;
+		color: #fff;
+	}
+
+	&__text {
+		grid-column: 1 / 8;
+		grid-row: 1 / 2;
+		height: auto;
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		top: 12rem;
+
+		@include respond(tab-land) {
+			top: 8rem;
+			grid-column: 1 / 10;
+		}
+
+		@include respond(tab-port) {
+			top: 8rem;
+			grid-column: 1 / 12;
+		}
+
+		@include respond(phone) {
+			grid-column: 2 / 12;
+			top: 10rem;
+		}
+	}
+
+	&__heading {
+		padding: 0;
+		margin: 0;
+		font-size: 4.7rem;
+		font-weight: 400;
+		
+		@include respond(phone) {
+	
+			font-size: 3.7rem;
+		}
+	}
+
+	&__copy {
+		font-size: 2rem;
+		width: 49.7rem;
+		margin-top: 2rem;
+		font-weight: 300;
+	}
+
+	&__btn {
+		margin-top: 4rem;
+		cursor: pointer;
+	}
+
+	&__img {
+		grid-column: 7 / 13;
+		grid-row: 1 / 2;
+		align-self: center;
+		width: 68.5rem;
+		user-select: none;
+
+		@include respond(tab-land) {
+			width: 58.5rem;
+			grid-column: 6 / 13;
+			align-self: end;
+			padding-bottom: 5rem;
+		}
+
+		@include respond(tab-port) {
+			width: 48.5rem;
+			
+			padding-bottom: 8rem;
+			
+		}
+
+		@include respond(phone) {
+			grid-column: 5 / 13;
+			width: 38.5rem;
+			padding-bottom: 8rem;
+		}
+	}
+}
+
+.hero-bg {
+	background-size: cover;
+	background-position: top;
+	position: absolute;
+	height: 76rem;
+    width: 100%;
+    
+	&__2 {
+		background-image: url(../img/hero-bg-2.svg);
+	}
+
+	&__3 {
+		background-image: url(../img/hero-bg-3.svg);
+	}
+}
