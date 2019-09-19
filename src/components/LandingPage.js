@@ -1,14 +1,19 @@
 import React from "react";
 import { connect } from "react-redux";
 import { startLogin } from "../actions/auth";
-import smoothscroll from 'smoothscroll-polyfill';
+import smoothscroll from "smoothscroll-polyfill";
 
 // kick off the polyfill!
 smoothscroll.polyfill();
 
 export const LandingPage = ({ startLogin }) => {
+	const date = new Date();
+	const year = date.getFullYear();
+
 	function handleScroll() {
-		document.querySelector('.description').scrollIntoView({ behavior: 'smooth' });
+		document
+			.querySelector(".description")
+			.scrollIntoView({ behavior: "smooth" });
 	}
 
 	return (
@@ -38,7 +43,9 @@ export const LandingPage = ({ startLogin }) => {
 							is a finance tracking web app built using React, Redux, and
 							Firebase.
 						</p>
-						<button className="btn hero__btn" onClick={handleScroll}>Learn More</button>
+						<button className="btn hero__btn" onClick={handleScroll}>
+							Learn More
+						</button>
 					</div>
 					<img
 						src="./img/hero-image.svg"
@@ -138,7 +145,7 @@ export const LandingPage = ({ startLogin }) => {
 				</div>
 				<div className="footer__author">
 					<p>
-						© <span className="date-year"></span> || Designed and Developed by{" "}
+						© {year} || Designed and Developed by{" "}
 						<a href="http://omarap.com">Omar Plasencia</a>
 					</p>
 				</div>

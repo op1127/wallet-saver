@@ -7,9 +7,7 @@
     "build:dev": "webpack --mode development",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server --mode development --open",
-    "test": "jest --watchAll",
-    "start": "node server/server.js",
-    "heroku-postbuild": "npm run build:prod"
+    "start": "node server/server.js"
   },
   "author": "Omar Plasencia",
   "license": "ISC",

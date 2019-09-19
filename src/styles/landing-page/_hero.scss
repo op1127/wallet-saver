@@ -6,6 +6,7 @@
 	position: relative;
 	z-index: 10;
 	height: 72rem;
+	font-family: 'Ubuntu' sans-serif;
 
 	&__content {
 		@include grid(1fr);
@@ -59,7 +60,7 @@
 	}
 
 	&__btn {
-		margin-top: 4rem;
+		margin-top: 1.3rem;
 		cursor: pointer;
 	}
 

@@ -15,9 +15,9 @@ export const Header = ({ startLogout }) => (
 						alt="Logo"
 					></img>
 				</Link>
-				<button className="btn btn__small" onClick={startLogout}>
-					Logout
-				</button>
+				<Link class="header__signout" onClick={startLogout}>
+					Sign out
+				</Link>
 			</div>
 		</div>
 	</header>
