@@ -31,6 +31,10 @@
         &:hover {
             border: .3rem solid $orange !important;
         }
+
+        @include respond(phone) {
+            width: 11rem;
+        }
     }
 
     &__small {
