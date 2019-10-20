@@ -47,11 +47,11 @@ Order: Base + typography > general layout + grid > page layout > components
 
 
 @mixin grid ($rows: auto) {
-    width: 73.125%;
+    width: 73%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: $rows;
-    column-gap: 2.56%;
+    column-gap: 2.5%;
     margin: 0 auto;
 
     @include respond(tab-land) {
